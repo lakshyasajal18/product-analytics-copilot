@@ -1,4 +1,5 @@
 # Product Analytics Copilot
+<img width="1499" height="681" alt="Screenshot 2026-07-24 at 12 30 30 PM" src="https://github.com/user-attachments/assets/a1aeb943-7e34-4fc7-9459-39506a7a256c" />
 
 Product Analytics Copilot is an AI-powered analytics assistant that allows users to explore product data using natural language. Instead of writing SQL manually, users can ask questions in plain English, and the application generates SQL, executes it on a SQLite database, visualizes the results, and provides AI-generated business insights.
 
