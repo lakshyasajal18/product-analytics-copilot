@@ -1,12 +1,8 @@
-from dotenv import load_dotenv
-import os
+import streamlit as st
 from google import genai
 
-# Load environment variables
-load_dotenv()
-
 # Create Gemini client
-client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+client = genai.Client(api_key=st.secrets["GEMINI_API_KEY"])
 
 # Database schema and instructions for Gemini
 SCHEMA = """
@@ -32,7 +28,7 @@ events(
 )
 
 Valid event_type values:
-- started_trial
+- started_trials
 - subscribed
 
 Rules:

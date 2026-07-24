@@ -1,16 +1,12 @@
-import os
+import streamlit as st
 
-from dotenv import load_dotenv
 from google import genai
 from google.genai.errors import ClientError
 
 
-load_dotenv()
-
 client = genai.Client(
-    api_key=os.getenv("GEMINI_API_KEY")
+    api_key=st.secrets["GEMINI_API_KEY"]
 )
-
 
 def generate_insight(question, dataframe):
     """
